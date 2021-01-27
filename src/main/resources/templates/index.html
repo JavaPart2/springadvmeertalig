@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="nl" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title th:text="#{welkom}"></title>
+</head>
+<body>
+<h1 th:text="#{welkom}"></h1>
+<p th:text="#{dagVanHetJaar(${volgnummer})}"></p>
+<ul>
+    <li><a th:href="@{/(locale=nl_BE)}">Nederlands</a></li>
+    <li><a th:href="@{/(locale=en_US)}">English</a></li>
+</ul>
+</body>
+</html>
